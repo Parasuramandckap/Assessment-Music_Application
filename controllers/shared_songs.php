@@ -9,8 +9,8 @@ foreach ($users as $usr){
     ?>
     <form action="/shared-verify" method="post">
         <input type="hidden" value="<?php echo $usr["id"]?>" name="userid">
-        <input type="text" value="<?php echo $usr["email_id"]?>" name="email">
-        <input type="hidden" value="<?php echo $_POST["song-name"] ?>" name="song">
+        <input type="text" value="<?php echo $usr["email_id"]?>" name="emailid">
+        <input type="hidden" value="<?php echo $_POST["song-name"] ?>" name="songname">
         <input type="submit" value="share">
     </form>
     <?php
