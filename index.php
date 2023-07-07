@@ -14,7 +14,12 @@ $routes = [
     "/created-song"=>"controllers/create-song-logic.php",
     "/follow"=>"controllers/follow.php",
     "/artist"=>"controllers/artist.php",
-    '/shared'=>"controllers/shared_songs.php"
+    '/shared'=>"controllers/shared_songs.php",
+    "/primium"=>"controllers/primium.php",
+    "/admin-home"=>"controllers/admin-home.php",
+    "/primium-verifiy"=>"controllers/primium.logic.php",
+    "/logout"=>"controllers/logout.php",
+    "/shared-verify"=>"controllers/shared-verify.php"
 
 ];
 

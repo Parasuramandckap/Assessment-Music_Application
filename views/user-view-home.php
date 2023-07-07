@@ -10,11 +10,22 @@
     <title>Document</title>
 </head>
 <body>
+<form action="/logout" method="post">
+    <input type="submit" value="logout">
+</form>
+<br>
+<?php
+$id = $_SESSION["user"]["id"];
+$al_primium = $app["db"]->query("SELECT * FROM users WHERE id = '$id'");
+$al_primium = $al_primium->fetchAll(PDO::FETCH_ASSOC);
 
+
+?>
 <form action="/primium" method="post">
     <input type="hidden" name="user-id" value="<?php echo $_SESSION["user"]["id"]?>">
-    <button type="submit">request primium</button>
+    <button type="submit"><?php echo $al_primium ? ' premium': 'request primium'?></button>
 </form>
+
 <h5>create a play list</h5>
 <form action="/create-playlist" method="post">
     <input type="hidden" name="user-id" value="<?php echo $_SESSION["user"]["id"]?>">
