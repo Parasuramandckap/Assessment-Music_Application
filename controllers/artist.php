@@ -1,7 +1,7 @@
 <?php
 
 
-//artist page;
+//this page use to create artist
 
 $artist = $_POST["artist"];
 $count = count($_FILES["file"]["name"]);

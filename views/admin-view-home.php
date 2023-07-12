@@ -32,11 +32,11 @@ foreach ($primium as $pri){
 <br>
 <h4>add songs </h4>
 <div>
-    <form action="/created-song" method="post" enctype="multipart/form-data">
+    <form action="/created-song-admin" method="post" enctype="multipart/form-data">
         <input type="text" name="song-name" placeholder="song-name">
         <input type="file" name="file" >
         <input type="text" placeholder="artist name" name="artist">
-        <input type="hidden" value="<?php echo $_SESSION["id"] ?>" name="play-id">
+<!--        <input type="hidden" value="--><?php //echo $_SESSION["id"] ?><!--" name="play-id">-->
         <button>create a song</button>
     </form>
 </div>

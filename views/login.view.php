@@ -13,5 +13,8 @@
         <input type="text" name="password" placeholder="password">
         <button type="submit">login</button>
     </form>
+    <form action="/guest" method="post">
+        <button type="submit">guest users</button>
+    </form>
 </body>
 </html>

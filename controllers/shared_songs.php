@@ -1,6 +1,6 @@
 <?php
 
-
+//the user  click the share button then show the all users
 
 $users = $app["db"]->query("SELECT * FROM users");
 $users = $users->fetchAll(PDO::FETCH_ASSOC);

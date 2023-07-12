@@ -1,5 +1,6 @@
 <?php
 
+//follow function which user which artist followed
 $artistName = $_POST["artist"];
 $userId =  $_POST["user-id"];
 

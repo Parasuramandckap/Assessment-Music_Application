@@ -1,7 +1,7 @@
 <?php
 
 
-
+//below function create playlist
 $userId = $_POST["user-id"];
 $playlistName = $_POST["play-list"];
 

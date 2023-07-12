@@ -1,6 +1,6 @@
 <?php
 
-
+//which user request to primium account to admin
 $userId = $_POST["user-id"];
 
 

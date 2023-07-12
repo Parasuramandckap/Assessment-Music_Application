@@ -1,6 +1,6 @@
 <?php
 
-
+//which user request to primium account this function approve admin user
 $userId = $_POST["user-id"];
 
 $app["db"]->query("UPDATE users SET is_premium = 1 where id = '$userId'");
